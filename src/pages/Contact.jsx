@@ -369,7 +369,7 @@ const Contact = () => {
 
     try {
       // 1. बैकएंड API कॉल (MongoDB Atlas में डेटा सेव होगा)
-      await axios.post('http://localhost:5000/api/enquiry', formData);
+      await axios.post('https://swastik-electrotech-api.onrender.com/api/enquiry', formData);
 
       // 2. ईमेल सीधे आपके इनबॉक्स (jaiswalpratik389@gmail.com) पर जाएगा
       const emailResponse = await fetch('https://api.web3forms.com/submit', {
